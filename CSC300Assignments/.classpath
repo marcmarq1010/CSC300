@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="Assignment2Problem1"/>
+	<classpathentry kind="src" path="Assignment2Problem2"/>
+	<classpathentry kind="src" path="Assignment2Problem3"/>
+	<classpathentry kind="src" path="Assignment3Problem1"/>
+	<classpathentry kind="src" path="Assignment3Problem2"/>
+	<classpathentry kind="src" path="Assignment3Problem3"/>
+	<classpathentry kind="src" path="Assignment4Problem1"/>
+	<classpathentry kind="src" path="Assignment4Problem2"/>
+	<classpathentry kind="src" path="Assignment5Problem1"/>
+	<classpathentry kind="src" path="Assignment5Problem2"/>
+	<classpathentry kind="src" path="Assignment5Problem3"/>
+	<classpathentry kind="src" path="Assignment6Problem1"/>
+	<classpathentry kind="src" path="Assignment6Problem2"/>
+	<classpathentry kind="src" path="Assignment6Problem3"/>
+	<classpathentry kind="src" path="Assignment6Problem4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
 		<attributes>
 			<attribute name="module" value="true"/>
