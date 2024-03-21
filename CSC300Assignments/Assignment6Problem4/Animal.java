@@ -1,9 +1,17 @@
 
 public class Animal
 {
+	private String name;
 
+	public Animal(String name)
+	{
+		this.name = name;
+	}
+
+	@Override
+	public String toString()
+	{
+		return String.format("%s", name);
+	}
+	
 }
-
-/*
-	TODO: Create a simple class called Animal instantiated with a name and a method toString which returns the name as a String.
-*/

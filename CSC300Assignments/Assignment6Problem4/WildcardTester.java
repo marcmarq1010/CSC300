@@ -19,56 +19,45 @@ public class WildcardTester
 		
 		addDog(brownDogList, "Tiger");
 		
+		System.out.println("The list of animals:");
 		printAll(animalList);
 		
+		System.out.println("The list of Brown Dogs:");
 		printAll(brownDogList);
 		
-		// TODO: Use deleteDog to delete the first item in the brownDogList.
-		// deleteDog();
+		deleteDog(brownDogList, "Tom");
+		
+		System.out.println("The list of Brown Dogs after a deletion of the first Dog in the list:");
+		printAll(brownDogList);
+		
+	}
+	
+	public static void addDog(ArrayList<? super BrownDog> dogList, String dogName)
+	{
+		
+		dogList.add(new BrownDog(dogName));
+		System.out.printf("Doggie named %s was added.\n", dogName);
+		
+		
+	}
+	
 
-		printAll(brownDogList);
-		
-	}
-	
-	// TODO: Has two parameters, an ArrayList with a lower bound of BrownDog, and a String with the name of a Dog.
-	public static void addDog(ArrayList lowerBound, String dogName)
+	public static void deleteDog(ArrayList<? extends Dog> dogList, String dogName)
 	{
-		
-		//TODO: Adds the identified Dog reference to the ArrayList, and prints out a line as shown in the sample output below.
-		
-	}
-	
-	// TODO: Has two parameters, an ArrayList with an upper bound of Dog, and a String with the name of a Dog to be deleted.
-	public static void deleteDog(ArrayList upperBound, String dogName)
-	{
-		
-		// TODO: Deletes the identified Dog reference to the ArrayList, and prints out a line as shown in the sample output below.
+		dogList.removeFirst();
+		System.out.printf("Doggie named %s was removed.\n", dogName);
 		
 	}
 	
-	// TODO: Has a single parameter of an ArrayList with a wildcard type.
 	public static void printAll(ArrayList<?> list)
 	{
 		
-		// TODO: Prints out all the items in the ArrayList.
+		for(Object dog : list)
+		{
+			System.out.printf("%s ",dog);
+		}
+		System.out.println();
 
-		
 	}
 	
 }
-
-/*					
-	OUTPUT:
-	Sample Output:
-		Doggie named GreyHound was added
-		Doggie named Boxer was added
-		Doggie named Spaniel was added
-		Doggie named Dachsund was added
-		The list of animals:
-		GreyHound 
-		The list of Brown Dogs:
-		Boxer Spaniel Dachsund 
-		Doggie named Boxer was removed
-		The list of Brown Dogs after a deletion of the first Dog in the list:
-		Spaniel Dachsund
-*/

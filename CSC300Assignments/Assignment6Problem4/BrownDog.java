@@ -2,8 +2,9 @@
 public class BrownDog extends Dog
 {
 
+	public BrownDog(String name) 
+	{
+        super(name);
+    }
+	
 }
-
-/*
-	TODO: Create a simple class Brown which extends Dog, but adds no new instance variable or methods.
-*/

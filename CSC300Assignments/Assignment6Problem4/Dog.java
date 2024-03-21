@@ -2,8 +2,9 @@
 public class Dog extends Animal
 {
 
-}
+	public Dog(String name)
+	{
+		super(name);
+	}
 
-/*
-	TODO: Create a simple class Dog which extends Animal, but adds no new instance variable or methods.
-*/
+}
