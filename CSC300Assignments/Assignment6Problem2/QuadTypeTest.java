@@ -5,23 +5,17 @@ public class QuadTypeTest
 	public static void main(String[] args)
 	{
 		
-		QuadType original = new QuadType(1, "one", true, 1.4);
+		QuadType <Integer, String, Boolean, Double> quad = new QuadType<>(1, "one", true, 1.4);
 
-		System.out.printf("%s", original);
+		System.out.printf("%s %s", "Original", quad);
 		
-		original.setF(2);
-		original.setS("Second");
-		original.setT(false);
-		original.setU(9.97);
+		quad.setF(2);
+		quad.setS("Second");
+		quad.setT(false);
+		quad.setU(9.97);
 
-		System.out.printf("%s", original);
+		System.out.printf("%s %s", "Modified", quad);
 		
 	}
 	
 }
-
-/*	
-	OUTPUT:
-	Original QuadType: <1, one, true, 1.40>
-	Modified QuadType: <2, Second, false, 9.97>
-*/

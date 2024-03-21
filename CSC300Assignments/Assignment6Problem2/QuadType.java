@@ -1,13 +1,18 @@
 
-public class QuadType <T>
+public class QuadType <Thing, Thing2, Thing3, Thing4>
 {
 	
-	private T F;
-	private T S;
-	private T T;
-	private T U;
+	private Thing F;
+	private Thing2 S;
+	private Thing3 T;
+	private Thing4 U;
 	
-	public QuadType(T f, T s, T t, T u)
+	public QuadType()
+	{
+		
+	}
+	
+	public QuadType(Thing f, Thing2 s, Thing3 t, Thing4 u)
 	{
 		setF(f);
 		setS(s);
@@ -16,53 +21,50 @@ public class QuadType <T>
 		
 	}
 
-	public T getF()
+	public Thing getF()
 	{
 		return F;
 	}
 
-	public void setF(T f)
+	public void setF(Thing f)
 	{
 		F = f;
 	}
 
-	public T getS()
+	public Thing2 getS()
 	{
 		return S;
 	}
 
-	public void setS(T s)
+	public void setS(Thing2 s2)
 	{
-		S = s;
+		S = s2;
 	}
 
-	public T getT()
+	public Thing3 getT()
 	{
 		return T;
 	}
 
-	public void setT(T t)
+	public void setT(Thing3 t2)
 	{
-		T = t;
+		T = t2;
 	}
 
-	public T getU()
+	public Thing4 getU()
 	{
 		return U;
 	}
 
-	public void setU(T u)
+	public void setU(Thing4 u2)
 	{
-		U = u;
+		U = u2;
 	}
 
 	@Override
 	public String toString()
 	{
-		return String.format("<%s, %s, %s, %s>\n", getF(), getS(), getT(), getU());
+		return String.format("%s: <%s, %s, %s, %s>\n","QuadType", getF(), getS(), getT(), getU());
 	}
 	
-	
-	
-
 }

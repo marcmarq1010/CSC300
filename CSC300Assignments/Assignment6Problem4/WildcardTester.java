@@ -24,14 +24,14 @@ public class WildcardTester
 		printAll(brownDogList);
 		
 		// TODO: Use deleteDog to delete the first item in the brownDogList.
-		deleteDog();
+		// deleteDog();
 
 		printAll(brownDogList);
 		
 	}
 	
 	// TODO: Has two parameters, an ArrayList with a lower bound of BrownDog, and a String with the name of a Dog.
-	public static void addDog(String dogName)
+	public static void addDog(ArrayList lowerBound, String dogName)
 	{
 		
 		//TODO: Adds the identified Dog reference to the ArrayList, and prints out a line as shown in the sample output below.
@@ -39,7 +39,7 @@ public class WildcardTester
 	}
 	
 	// TODO: Has two parameters, an ArrayList with an upper bound of Dog, and a String with the name of a Dog to be deleted.
-	public static void deleteDog(String dogName)
+	public static void deleteDog(ArrayList upperBound, String dogName)
 	{
 		
 		// TODO: Deletes the identified Dog reference to the ArrayList, and prints out a line as shown in the sample output below.
@@ -47,7 +47,7 @@ public class WildcardTester
 	}
 	
 	// TODO: Has a single parameter of an ArrayList with a wildcard type.
-	public static void printAll()
+	public static void printAll(ArrayList<?> list)
 	{
 		
 		// TODO: Prints out all the items in the ArrayList.

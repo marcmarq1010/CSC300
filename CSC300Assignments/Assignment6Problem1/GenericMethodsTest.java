@@ -18,10 +18,11 @@ public class GenericMethodsTest
 	
 	} 
 	
-	public static <E> void printArray(E[] inputArray)
+	// Thing represents T 
+	public static <Thing> void printArray(Thing[] inputArray)
 	{
 		// display array elements 	
-		for (E element : inputArray) 
+		for (Thing element : inputArray) 
 		{
 			System.out.print(" " + element); 	
 		} 		
