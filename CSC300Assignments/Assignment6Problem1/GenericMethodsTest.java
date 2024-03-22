@@ -22,9 +22,9 @@ public class GenericMethodsTest
 	public static <Thing> void printArray(Thing[] inputArray)
 	{
 		// display array elements 	
-		for (Thing element : inputArray) 
+		for (Thing thing : inputArray) 
 		{
-			System.out.print(" " + element); 	
+			System.out.print(" " + thing); 	
 		} 		
 		
 		System.out.printf("\n"); 	
